@@ -1,0 +1,77 @@
+* {
+  perspective: 600px; }
+
+.icon-focused {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .icon-focused .success .icon {
+    background-color: #28a745;
+    border-color: #28a745; }
+  .icon-focused .success .data {
+    color: #28a745; }
+  .icon-focused .primary .icon {
+    background-color: #007bff;
+    border-color: #007bff; }
+  .icon-focused .primary .data {
+    color: #007bff; }
+  .icon-focused .danger .icon {
+    background-color: #dc3545;
+    border-color: #dc3545; }
+  .icon-focused .danger .data {
+    color: #dc3545; }
+  .icon-focused .golden .icon {
+    background-color: #ffc107;
+    border-color: #ffc107; }
+  .icon-focused .golden .data {
+    color: #ffc107; }
+
+.icon-focused-circle, .icon-focused-square {
+  position: relative;
+  margin: 50px;
+  padding: 35px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: -4px 4px 4px rgba(69, 69, 69, 0.1), 4px 4px 4px rgba(69, 69, 69, 0.1), -1px -1px 2px rgba(69, 69, 69, 0.1);
+  width: 9%;
+  border-top: 1px solid rgba(69, 69, 69, 0.1);
+  transition: all .2s ease-in-out; }
+  .icon-focused-circle:hover, .icon-focused-square:hover {
+    transform: translate3d(5px, 0px, 20px);
+    box-shadow: -4px 6px 6px rgba(69, 69, 69, 0.1), 6px 6px 6px rgba(69, 69, 69, 0.1), -2px -2px 3px rgba(69, 69, 69, 0.1);
+    transition: all .2s ease-in-out; }
+  .icon-focused-circle .icon, .icon-focused-square .icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-size: 38px;
+    order: 0;
+    text-align: center; }
+  .icon-focused-circle .data, .icon-focused-square .data {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    display: flex;
+    flex-direction: column-reverse; }
+    .icon-focused-circle .data .data-name, .icon-focused-square .data .data-name {
+      font-size: 14px;
+      padding: 2px; }
+    .icon-focused-circle .data .data-value, .icon-focused-square .data .data-value {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 2px; }
+
+.icon-focused .icon-focused-circle .icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+.icon-focused .icon-focused-square .icon {
+  top: 12px;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  padding-bottom: 2px; }
+
+/*# sourceMappingURL=focused.css.map */
